@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+body {
+    font-size: 100%;
+    background-color: whitesmoke;
+    font-family: 'Freehand', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.cabecalho {
+        
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2F4F4F;
+    border-bottom: 0.4px solid #1b9292;
+    
+}
+
+.cabecalho a{
+color: black;
+}
+
+.cabecalho a:hover{
+color: whitesmoke;
+cursor: pointer;
+
+
+}
+
+
+.cabecalho-menu {
+display: flex;
+gap: 100px;
+
+}
+
+.cabecalho-menu-item {
+
+font-family: Helvetica;
+color: #2F4F4F;
+font-weight: 400;
+font-size: 18px;
+
+}
+
+.cabecalho-imagem{
+width: 145px;
+height: 135px;
+}
+.nome-produto{
+    text-align: center;
+    text-shadow: #2F4F4F;
+}
+.imagem_principal{
+
+    width: 30%;
+
+    height: 45%;
+
+    border: 0.4px solid rgb(9, 82, 21);
+
+    border-radius: 8px;
+    box-shadow: 5px black;
+
+}
+.imagem_principal:hover {
+    cursor: url('http://icons.iconarchive.com/icons/gakuseisean/ivista-2/32/Start-Menu-Search-icon.png'), auto;
+    max-width: 100%;
+    }
+    .imagem_principal {
+    max-width: 250px;
+    transition: all ease-out .2s;
+    }
+.descricao{
+    font-weight: bold
+}
+.menu_venda_input{
+   
+  text-align: right;
+  text-align: right;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    margin-bottom: 30px;
+}
+
+.cep{
+    margin-top: 5px;
+}
+.calcular{
+  margin-bottom: 5px;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  
+}
+
+.calcular:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.calcular:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.calcular :hover{
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+.btn-salvar{
+
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    
+  }
+  
+  .btn-salvar:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .btn-salvar:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .btn-salvar :hover{
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  }
+
+  .frete{
+    size: 100px;
+  }
+
+  .botoes_venda_contador{
+    text-align: top;
+    font-size: 16px;
+    size: 10px;
+    margin-bottom: 100px;
+    align-items: center;
+    margin-left: 450px;
+    margin-top: none;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+.btn_mais{
+  size: 25px;
+  background-color: #27ae60;
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  color: #fff;
+  border-color: #2F4F4F;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+  font-size: large;
+  border: none;
+  height: 20px;
+	width: 30px;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  
+  
+}
+.btn_menos{
+  background-color: #27ae60;
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  color: #fff;
+  border-color: #2F4F4F;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+  font-size: large;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  height: 20px;
+	width: 30px;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+}
+.btn_finalizar_venda{
+
+  margin-bottom: 5px;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  
+}
+
+.btn_finalizar_venda:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.btn_finalizar_venda:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.btn_finalizar_venda :hover{
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2F4F4F;
+    border-top: 0.4px solid #1b9292;
+    padding: 32px
+    
+
+}

@@ -26,60 +26,38 @@
                 <button id="card_login" onclick="activeTab('login')"><strong>Logar</strong></button>
                 <button id="card_cadastro" onclick="activeTab('cadastro')"><strong>Cadastrar</strong></button>
             </div>
-        <form id="login">
+        <form id="login" onsubmit="onSignIn(event)">
                 
-            <input type="email" id="email" placeholder="Email"/required>
-            <input type="password" id="senha" placeholder="Senha"/required>
+            <input type="email" id="email" name="email" placeholder="Email" required/>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required/>
             
             <div class="check">
-                <input type="checkbox" />
+                <input id="lembrar_senha" name="lembrar_senha" type="checkbox" />
                 <span div="check">Lembrar senha</span>
             </div>
-            <button type="submit"><strong>Logar</strong></button>
+            <button id="submit_logar" type="submit"><strong>Logar</strong></button>
         </form>
 
-        <form id="cadastro">
-            <input type="text" id="nome" placeholder="Nome completo"/required>
-            <input type="email" id="email" placeholder="Email"/required>
-            <input type="password" id="senha" placeholder="Senha "/required>        
-            <input type="password" id="senha2" placeholder="Confirmar senha"/required>
+        <form id="cadastro" onsubmit="onSignUp(event)">
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" required/>
+            <input type="email" id="email" name="email" placeholder="Email" required/>
+            <input type="password" id="senha" name="senha" placeholder="Senha " required/>        
+            <input type="password" id="senha2" name="senha2" placeholder="Confirmar senha" required/>
             <div class="check">
-                <input type="checkbox" />
+                <input id="promocoes_email" name="promocoes_email" type="checkbox" />
                 <span>Promoções via email</span>
             </br>
             
-                <input type="checkbox" />
+                <input id="aceitar_termos" name="aceitar_termos" type="checkbox" required />
                 <span>Aceitar termos</span>
             </div>
-            <button type="submit"><strong>Cadastrar</strong></button>
+            <button id="submit_cadastrar" type="submit"><strong>Cadastrar</strong></button>
 
 
         </form>
     </div>
 
-
-    <script>
-
-
-        const formlogin = document.getElementById('login')
-        const formcadastro = document.getElementById('cadastro')
-
-        formlogin.style.display = null
-        formcadastro.style.display = 'none'
-
-        function activeTab(tabname){
-            if(tabname==='login'){
-                formcadastro.style.display = 'none'
-                formlogin.style.display = null
-            }
-            else if(tabname==='cadastro'){
-                formlogin.style.display = 'none'
-                formcadastro.style.display = null
-            }
-        }
-
-
-    </script>
+    
 
     <script src="cadastro.js">
 

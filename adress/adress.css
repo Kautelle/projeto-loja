@@ -44,10 +44,10 @@ body{
 }
 
 .bandeira {
-    width: 60%;
+    width: 40%;
     height: 20%;
     padding: 5px;
-    margin-left: 110px;
+    margin-left: 170px;
 }
 
 .name{
@@ -130,7 +130,7 @@ body{
     padding: 5px 0 8px 10px;
     font-size: 15px;
     margin-top: 70px;
-    margin-left: 70px;
+    margin-left: 75px;
     text-decoration: none;
 }
 
@@ -143,6 +143,31 @@ body{
     cursor: pointer;
     background-color: #074646;
 
+}
+
+.btn-retirada{
+    background-color: #056d6d;
+    border-radius: 5px;
+    width: 70%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 5px 0 8px 10px;
+    font-size: 15px;
+    margin-top: 148px;
+    margin-left: 75px;
+    text-decoration: none;
+}
+
+.btn-retirada a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-retirada:hover{
+    cursor: pointer;
+    background-color: #074646;
 }
 
 
@@ -201,11 +226,13 @@ div .botoes_card{
     color: #2FB2A4;
     text-align: center;
     padding: 5px;
+    margin-top: 40px;
 }
 
 .apontar_camera{
     text-align: center;
     text-decoration: underline;
+    margin-top: 40px;
 }
 
 
