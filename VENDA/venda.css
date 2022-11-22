@@ -86,7 +86,6 @@ height: 135px;
 .menu_venda_input{
    
   text-align: right;
-  text-align: right;
   font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
     margin-bottom: 30px;
 }
@@ -193,6 +192,7 @@ height: 135px;
 
   .frete{
     size: 100px;
+    
   }
 
   .botoes_venda_contador{

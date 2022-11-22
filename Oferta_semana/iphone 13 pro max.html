@@ -18,7 +18,7 @@
                 id('format').value =
                     parseInt(id('format').value) + 1;
 
-                id('total').value = 20 * id('format').value
+                id('total').value = 7500 * id('format').value
 
 
             }
@@ -27,7 +27,7 @@
                     id('format').value =
                         parseInt(id('format').value) - 1;
 
-                id('total').value = 20 * id('format').value;
+                id('total').value = 7500 * id('format').value;
             }
         }
     </script>
@@ -104,6 +104,10 @@
     <script src="../index.js"></script>
 
     <div class="botoes_venda_contador">
+        Quantidade: <input class="quantidade_venda" type="text" name="format" value="0" id="format" size="2" />
+        <br />
+        <br />
+        
         <input class="btn_mais" type="button" name="mais" id="mais" value="+" />
 
         <input class="btn_menos" type="button" name="menos" id="menos" value="-" />
@@ -111,7 +115,7 @@
         <br />
         <br />
 
-        Quantidade: <input class="quantidade_venda" type="text" name="format" value="0" id="format" size="2" />
+        
 
         <br /><br />
         Total: <input class="total_venda" type="text" name="total" id="total" value="" />
