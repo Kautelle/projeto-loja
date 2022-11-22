@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda</title>
+    <link rel="stylesheet" type="text/css" href="../VENDA/venda.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script type="text/javascript">
+        function id(el) {
+            return document.getElementById(el);
+        }
+        window.onload = function () {
+            id('mais').onclick = function () {
+                id('format').value =
+                    parseInt(id('format').value) + 1;
+
+                id('total').value = 20 * id('format').value
+
+
+            }
+            id('menos').onclick = function () {
+                if (id('format').value > 0)
+                    id('format').value =
+                        parseInt(id('format').value) - 1;
+
+                id('total').value = 20 * id('format').value;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="../index.html"><img src="../logo.png" class="cabecalho-imagem  img-responsive img-thumbnail"></a>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="../smartphones/smartphones.html">Smartphones</a>
+            <a class="cabecalho-menu-item" href="../perifericos/perifericos.html">Perifericos</a>
+            <a class="cabecalho-menu-item" href="../capinhas/capinhas.html">Capinhas Personalizadas</a>
+            <a class="cabecalho-menu-item" href="#abrirModal">Login e Cadastro</a>
+        </nav>
+    </header>
+    <h1 class="nome-produto">iphone 13 pro max</h1>
+    <div class="imagen_venda">
+        <img class="imagem_principal" src="./imagens/IPHONE13.png" alt="IPHONE14M_resized">
+    </div>
+    <div class="descricao">
+        <dl>
+            <dd> preço: R$ 7.500.00 </dd>
+            <dd> Marca:  Apple </dd>
+            <dd>Nome do modelo:  iPhone 13 Pro Max </dd>
+            <dd>Operadora de celulares e tecnologia sem fio</dd>	
+            <dd>Desbloqueado</dd>
+            <dd>Sistema operacional	iOS 14 </dd> 
+            <dd>Tecnologia celular	5G</dd> 
+           </dl>
+
+    </div>
+
+    <div id="abrirModal" class="modal">
+
+
+        <a href="#fechar" title="Fechar" class="fechar">x</a>
+        <div class="card">
+            <div class="botoes_card">
+                <div class="btn_cor"></div>
+                <button id="card_login" onclick="activeTab('login')"><strong>Logar</strong></button>
+                <button id="card_cadastro" onclick="activeTab('cadastro')"><strong>Cadastrar</strong></button>
+            </div>
+            <form id="login" onsubmit="onSignIn(event)">
+
+                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="password" id="senha" name="senha" placeholder="Senha" required />
+
+                <div class="check">
+                    <input id="lembrar_senha" name="lembrar_senha" type="checkbox" />
+                    <span div="check">Lembrar senha</span>
+                </div>
+                <button id="submit_logar" type="submit"><strong>Logar</strong></button>
+            </form>
+
+            <form id="cadastro" onsubmit="onSignUp(event)">
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
+                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="password" id="senha" name="senha" placeholder="Senha " required />
+                <input type="password" id="senha2" name="senha2" placeholder="Confirmar senha" required />
+                <div class="check">
+                    <input id="promocoes_email" name="promocoes_email" type="checkbox" />
+                    <span>Promoções via email</span>
+                    </br>
+
+                    <input id="aceitar_termos" name="aceitar_termos" type="checkbox" required />
+                    <span>Aceitar termos</span>
+                </div>
+                <button id="submit_cadastrar" type="submit"><strong>Cadastrar</strong></button>
+
+
+            </form>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+
+    <div class="botoes_venda_contador">
+        <input class="btn_mais" type="button" name="mais" id="mais" value="+" />
+
+        <input class="btn_menos" type="button" name="menos" id="menos" value="-" />
+
+        <br />
+        <br />
+
+        Quantidade: <input class="quantidade_venda" type="text" name="format" value="0" id="format" size="2" />
+
+        <br /><br />
+        Total: <input class="total_venda" type="text" name="total" id="total" value="" />
+        <br />
+        <br />
+
+        <button class="btn_finalizar_venda" ><a href="../adress/adress.html">Finalizar Compra</a></button>
+
+
+
+    </div>
+
+    <form class="menu_venda_input">
+        <label for="CEP">CEP:
+            <input class="cep" name="CEP" id="CEP" required pattern="\d{5}-\d{3}" />
+        </label>
+        <input class="calcular" type="submit" value="Calcular" />
+    </form>
+
+
+
+
+
+
+    <footer class="rodape">
+        <!--<img class="logoR" src="rodape.png" alt="imagem de rodape">!-->
+
+        <p>Telefone: (16) 98822-1385</p>
+        <p>Endereços: Rua Nhonhô Livramento, 1674 - Centro, Monte Alto - SP, 15910-000</p>
+        <p>Sobre nós</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

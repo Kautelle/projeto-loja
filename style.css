@@ -344,5 +344,11 @@ body {
     margin-right: 45px;
   }
 
+  .btn_finalizar_venda a{
+    color: white;
+    text-decoration: none;
+
+  }
+
 
   

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    
+
 </head>
+
 <body>
 
     <header class="cabecalho">
@@ -33,11 +35,13 @@
                 <!--<h2 class="subtitulo-promo"> Preços imperdiveis !!!</h2>!-->
                 <a href="Oferta_semana/ofertas.html">
                     <button class="botaoN"><strong>Confira</strong></button>
-                  </a> 
+                </a>
             </div>
             <br>
-            <br>  
-            <a href="https://www.apple.com/br/?afid=p238%7CsikJb1MHC-dc_mtid_1870765e38482_pcrid_631485569162_pgrid_17049243418_pntwk_g_pchan__pexid__&cid=aos-br-kwgo-brand--slid---product-"><img class="logodivu" src="iphone 13.png" alt="Imagem de divulgação" ></a>
+            <br>
+            <a
+                href="https://www.apple.com/br/?afid=p238%7CsikJb1MHC-dc_mtid_1870765e38482_pcrid_631485569162_pgrid_17049243418_pntwk_g_pchan__pexid__&cid=aos-br-kwgo-brand--slid---product-"><img
+                    class="logodivu" src="iphone 13.png" alt="Imagem de divulgação"></a>
         </section>
 
         <section class="conteudo-secundario">
@@ -52,9 +56,11 @@
     </main>
 
 
-        <div class="redesocial">
-            <a href="https://www.instagram.com/shoppingdascapinhasma/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-        </div>
+    <div class="redesocial">
+        <a href="https://www.instagram.com/shoppingdascapinhasma/" target="_blank"><img
+                src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                target="_blank"></a>
+    </div>
 
 
 
@@ -62,59 +68,59 @@
 
 
 
-        <div id="abrirModal" class="modal">
-            
-            
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-                <div class="card">
-                    <div class="botoes_card">
-                        <div class="btn_cor"></div>
-                        <button id="card_login" onclick="activeTab('login')"><strong>Logar</strong></button>
-                        <button id="card_cadastro" onclick="activeTab('cadastro')"><strong>Cadastrar</strong></button>
-                    </div>
-                <form id="login" onsubmit="onSignIn(event)">
-                        
-                    <input type="email" id="email" name="email" placeholder="Email" required/>
-                    <input type="password" id="senha" name="senha" placeholder="Senha" required/>
-                    
-                    <div class="check">
-                        <input id="lembrar_senha" name="lembrar_senha" type="checkbox" />
-                        <span div="check">Lembrar senha</span>
-                    </div>
-                    <button id="submit_logar" type="submit"><strong>Logar</strong></button>
-                </form>
-        
-                <form id="cadastro" onsubmit="onSignUp(event)">
-                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required/>
-                    <input type="email" id="email" name="email" placeholder="Email" required/>
-                    <input type="password" id="senha" name="senha" placeholder="Senha " required/>        
-                    <input type="password" id="senha2" name="senha2" placeholder="Confirmar senha" required/>
-                    <div class="check">
-                        <input id="promocoes_email" name="promocoes_email" type="checkbox" />
-                        <span>Promoções via email</span>
+    <div id="abrirModal" class="modal">
+
+
+        <a href="#fechar" title="Fechar" class="fechar">x</a>
+        <div class="card">
+            <div class="botoes_card">
+                <div class="btn_cor"></div>
+                <button id="card_login" onclick="activeTab('login')"><strong>Logar</strong></button>
+                <button id="card_cadastro" onclick="activeTab('cadastro')"><strong>Cadastrar</strong></button>
+            </div>
+            <form id="login" onsubmit="onSignIn(event)">
+
+                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="password" id="senha" name="senha" placeholder="Senha" required />
+
+                <div class="check">
+                    <input id="lembrar_senha" name="lembrar_senha" type="checkbox" />
+                    <span div="check">Lembrar senha</span>
+                </div>
+                <button id="submit_logar" type="submit"><strong>Logar</strong></button>
+            </form>
+
+            <form id="cadastro" onsubmit="onSignUp(event)">
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
+                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="password" id="senha" name="senha" placeholder="Senha " required />
+                <input type="password" id="senha2" name="senha2" placeholder="Confirmar senha" required />
+                <div class="check">
+                    <input id="promocoes_email" name="promocoes_email" type="checkbox" />
+                    <span>Promoções via email</span>
                     </br>
-                    
-                        <input id="aceitar_termos" name="aceitar_termos" type="checkbox" required />
-                        <span>Aceitar termos</span>
-                    </div>
-                    <button id="submit_cadastrar" type="submit"><strong>Cadastrar</strong></button>
-        
-        
-                </form>
-            </div>
-            </div>
 
-            <script src="index.js"></script>
-        
+                    <input id="aceitar_termos" name="aceitar_termos" type="checkbox" required />
+                    <span>Aceitar termos</span>
+                </div>
+                <button id="submit_cadastrar" type="submit"><strong>Cadastrar</strong></button>
+
+
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
 
     <footer class="rodape">
         <!--<img class="logoR" src="rodape.png" alt="imagem de rodape">!-->
-        
+
         <p>Telefone: (16) 98822-1385</p>
         <p>Endere�os: Rua Nhonh� Livramento, 1674 - Centro, Monte Alto - SP, 15910-000</p>
         <p>Sobre n�s</p>
         </div>
-        
+
     </footer>
 
 </body>
